@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dakarai Simmons - Portfolio</title>
+    <link rel="stylesheet" href="materialize.css" />
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="css/grid-layout.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        header,
+        main,
+        footer,
+        .ml,
+        #about,
+        #contact {
+            padding-left: 310px;
+        }
+
+        #about,
+        #contact {
+            padding-right: 20px;
+        }
+
+        @media only screen and (max-width: 992px) {
+
+            header,
+            main,
+            footer,
+            .ml,
+            #about {
+                padding-left: 0;
+            }
+        }
+
+        .sidenav-trigger {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+
+        #profile-card {
+            box-shadow: -8px 0px 10px -8px rgba(0, 0, 0, 1) inset !important;
+            color: white;
+        }
+
+        #id-card {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        #id-card img {
+            border-radius: 5%;
+            width: 70%;
+            height: auto;
+        }
+
+        #social-grid {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            flex-basis: 100%;
+        }
+
+        .link {
+            cursor: pointer;
+            padding: 0 0 0 32px;
+            transition: padding 300ms, font-size 300ms, color 300ms;
+            font-size: 15px;
+        }
+
+        .link:hover {
+            padding: 0 0 0 45px;
+            font-size: 18px;
+        }
+
+        .link.active {
+            text-decoration: underline;
+            font-size: 18px;
+            color: #ff6d00;
+            padding: 0 0 0 45px;
+        }
+
+        i.small {
+            color: white;
+        }
+
+        .none {
+            display: none;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: #ffffffde;
+            height: 100vh;
+            align-content: space-around;
+        }
+
+        main .card {
+            max-width: 25vw;
+            margin-right: 1.25vw;
+            height: fit-content;
+        }
+
+        #color-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #ffffffde;
+            z-index: -1;
+        }
+
+        #flip-img {
+            position: relative;
+            transform-style: preserve-3d;
+            transition: 0.25s;
+            height: 250px;
+            width: 250px;
+        }
+
+        #flip-img.active {
+            transform: rotateY(180deg);
+        }
+
+        #flip-img img {
+            backface-visibility: hidden;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        #id-front {
+            transform: rotateY(0deg);
+            z-index: 2;
+        }
+
+        #id-back {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body class="indigo darken-1">
+    <ul id="profile-card" class="sidenav sidenav-fixed indigo darken-1">
+        <li id="id-card">
+            <div id="flip-img">
+                <img id="id-front" src="img/infinitelyCannon.png" />
+                <img id="id-back" src="img/myself.jpg" />
+            </div>
+            <h5>Dakarai Simmons</h5>
+            <h6>Gameplay Programmer</h6>
+            <div id="social-grid">
+                <a href="https://www.linkedin.com/in/dakarai-simmons-a23787132/" target="_blank">
+                    <i class="small mdi mdi-linkedin-box"></i>
+                </a>
+                <a href="https://www.github.com/infinitelycannon" target="_blank">
+                    <i class="small mdi mdi-github-circle"></i>
+                </a>
+                <a href="mailto:dakar0416@gmail.com">
+                    <i class="small mdi mdi-email"></i>
+                </a>
+            </div>
+        </li>
+        <li>
+            <span class="link active">Portfolio</span>
+        </li>
+        <li>
+            <span class="link">About</span>
+        </li>
+    </ul>
+    <div id="catformer" class="modal">
+        <div class="modal-content">
+            <h4>Catformer</h4>
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="img/cat4.png" />
+                    </li>
+                    <li>
+                        <img src="img/cat1.png" />
+                    </li>
+                    <li>
+                        <img src="img/cat2.png" />
+                    </li>
+                    <li>
+                        <img src="img/cat3.png" />
+                    </li>
+                </ul>
+            </div>
+            <p>Catformer is a 2D infinite jumping platformer. In this project we aimed for a challenging experience that
+                is simple to execute. Which gave us more space to focus on
+                stylistic improvements, like diverse cat options and visually appealing graphics, as additional
+                pull-ins.
+            </p>
+            <p>
+                My roles for this game included:
+            </p>
+            <ul>
+                <li> • Gameplay system for random generation of platforms</li>
+                <li> • Repeatedly scrolling parallax effect with background sprites</li>
+                <li> • Implementing Primary jumping mechanic</li>
+                <li> • Oversaw Android platform compilation</li>
+            </ul>
+
+            <p>
+                The experience of working on this game introduced me to several challengs when it comes to making a game
+                look and perform well on a range of mobile plaforms.
+            </p>
+        </div>
+    </div>
+    <div id="jetsam" class="modal">
+        <div class="modal-content">
+            <h4>4715 Jetsam</h4>
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="img/4715 Jetsam_1.png" />
+                    </li>
+                    <li>
+                        <img src="img/4715 Jetsam_2.png" />
+                    </li>
+                    <li>
+                        <img src="img/4715 Jetsam_3.png" />
+                    </li>
+                    <li>
+                        <img src="img/4715 Jetsam_4.png" />
+                    </li>
+                    <li>
+                        <img src="img/4715 Jetsam_5.png" />
+                    </li>
+                </ul>
+            </div>
+            <p>A third person shooter for the Windows platform. The aim for this game was to provide a short, cohesive
+                experience with simple approachable mechanics. Working on this project was a significant lesson in
+                values of team contributions and consice
+                documentation. As well as how much the Unity engine does and does't supply for you when branching from a
+                common set of player mechanics.
+            </p>
+            <p>
+                My roles for this game included:
+            </p>
+            <ul>
+                <li> • Implementing player movement and combat mechanics</li>
+                <li> • Designing a finite state machine for enemy AI</li>
+                <li> • Creating functionality for a console terminal-based user menu</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div id="get-out" class="modal">
+        <div class="modal-content">
+            <h4>GET.out</h4>
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="img/cat4.png" />
+                    </li>
+                    <li>
+                        <img src="img/cat1.png" />
+                    </li>
+                    <li>
+                        <img src="img/cat2.png" />
+                    </li>
+                    <li>
+                        <img src="img/cat3.png" />
+                    </li>
+                </ul>
+            </div>
+            <p>A third person shooter for the Windows platform. The aim for this game was to provide a short, cohesive
+                experience with simple approachable mechanics. Working on this project was a significant lesson in
+                values of team contributions and consice
+                documentation. As well as how much the Unity engine does and does't supply for you when branching from a
+                common set of player mechanics.
+            </p>
+            <p>
+                My roles for this game included:
+            </p>
+            <ul>
+                <li> • Implementing player movement and combat mechanics</li>
+                <li> • Designing a finite state machine for enemy AI</li>
+                <li> • Creating functionality for a console terminal-based user menu</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="color-background"></div>
+    <div id="portfolio" class="ml">
+        <div class="ml-pnl">
+            <div class="ml-pnl__cntnt">
+                <a style="color: black;" class="modal-trigger" href="#catformer">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/Catformer_DBanner.png" />
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Catformer</span>
+                            <p>Group Ocho <span style="float: right;">2019 - Unity</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="ml-pnl">
+            <div class="ml-pnl__cntnt">
+                <a style="color: black;" class="modal-trigger" href="#jetsam">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/jetsam-logo.png" />
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">4715 Jetsam</span>
+                            <p>Quirky Games <span style="float: right;">2019 - Unity</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="none">
+        <p>I am a computer programmer studying Game Design as a Digital Media student at the University of Central
+            Florida. My skills focus on gameplay systems and mechanics. This focus grew out of a deep interest for
+            solving logical problems, crafting interactable systems, and doing so with as strong a connection to
+            mathematics as I can.</p>
+        <p><a href="files/Dakarai_Simmons_Resume.pdf" target="_blank">Resume</a></p>
+    </div>
+    <a href="#" data-target="profile-card"
+        class="sidenav-trigger btn-large btn-floating waves-effect waves-light orange"><i
+            class="large mdi mdi-menu"></i></a>
+    <!--
+    <main>
+        <div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/Catformer_DBanner.png" />
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Catformer</span>
+                    <p>Group Ocho <span style="float: right;">2019</span></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/jetsam-logo.png" />
+                </div>
+                <div class="card-content">
+                    <span class="card-title">4715 Jetsam</span>
+                    <p>Quirky Games <span style="float: right;">2019</span></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/get-out-logo.png" />
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Get.out</span>
+                    <p>Individual Project <span style="float: right;">2019</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+-->
+    <script src="materialize.min.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var modal = document.querySelectorAll(".modal");
+            var slides = document.querySelectorAll('.slider');
+            var nav = document.querySelectorAll(".sidenav");
+            M.Modal.init(modal, {
+                opacity: 0
+            });
+            M.Slider.init(slides, {
+                indicators: true,
+                height: 600
+            });
+            M.Sidenav.init(nav, {
+                draggable: false
+            });
+        });
+
+        var links = document.getElementsByClassName("link");
+        var linkIdx = 0;
+
+        function setTab(name) {
+            switch (name) {
+                case "Portfolio":
+                    $("#portfolio").removeClass("none");
+                    $("#about").addClass("none");
+                    $("#flip-img").removeClass("active");
+                    break;
+                case "About":
+                    $("#portfolio").addClass("none");
+                    $("#about").removeClass("none");
+                    $("#flip-img").addClass("active");
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        $(".link").click(function () {
+            $(".link.active").removeClass("active");
+            $(this).addClass("active");
+            setTab($(this).html());
+        });
+    </script>
+</body>
+
+</html>
