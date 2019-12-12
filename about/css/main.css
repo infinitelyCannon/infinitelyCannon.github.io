@@ -60,6 +60,7 @@ footer,
 
     .ml {
         padding-left: 0;
+        display: none;
         margin-left: 0;
     }
 
@@ -76,6 +77,7 @@ footer,
     position: fixed;
     bottom: 10px;
     left: 10px;
+    z-index: 12;
 }
 
 #profile-card {
