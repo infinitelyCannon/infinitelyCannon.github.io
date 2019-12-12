@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dakarai Simmons - Portfolio</title>
+    <link rel="stylesheet" href="css/materialize.css" />
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="css/grid-layout.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="indigo darken-1">
+    <ul id="profile-card" class="sidenav sidenav-fixed indigo darken-1">
+        <li id="id-card">
+            <div id="flip-img">
+                <img id="id-front" src="img/infinitelyCannon.png" />
+                <img id="id-back" src="img/myself.jpg" />
+            </div>
+            <h5>Dakarai Simmons</h5>
+            <h6>Gameplay Programmer</h6>
+            <div id="social-grid">
+                <a href="https://www.linkedin.com/in/dakarai-simmons-a23787132/" target="_blank">
+                    <i class="small mdi mdi-linkedin-box"></i>
+                </a>
+                <a href="https://www.github.com/infinitelycannon" target="_blank">
+                    <i class="small mdi mdi-github-circle"></i>
+                </a>
+                <a href="mailto:dakar0416@gmail.com">
+                    <i class="small mdi mdi-email"></i>
+                </a>
+                <a href="tel:9047042330">
+                    <i class="small mdi mdi-phone"></i>
+                </a>
+            </div>
+        </li>
+        <li style="padding: 0;">
+            <a class="link" href="files/Dakarai_Simmons_Resume.pdf" target="_blank">Resume</a>
+        </li>
+        <li>
+            <h5 style="text-align: center;">About</h5>
+        </li>
+        <li style="text-align: justify; line-height: normal; padding: 0 10px;">
+            <p>I am a computer programmer studying Game Design as a Digital Media student at the University of Central
+                Florida. My skills focus on gameplay systems and mechanics. This focus grew out of a deep interest for
+                solving logical problems, crafting interactable systems, and doing so with as strong a connection to
+                mathematics as I manage.</p>
+        </li>
+    </ul>
+
+    <div id="color-background"></div>
+    <div id="portfolio" class="ml" style="column-count: 1; width: 500px;">
+        <div class="ml-pnl">
+            <div class="ml-pnl__cntnt">
+                <a style="color: black;" style="cursor: pointer;" onclick="setTab('catformer')">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/Catformer_DBanner.png" />
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Catformer</span>
+                            <p>Group Ocho <span style="float: right;">2019 - Unity</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="ml-pnl">
+            <div class="ml-pnl__cntnt">
+                <a style="color: black;" class="modal-trigger" onclick="setTab('jetsam')">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/jetsam-logo.png" />
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">4715 Jetsam</span>
+                            <p>Quirky Games <span style="float: right;">2019 - Unity</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="ml-pnl">
+            <div class="ml-pnl__cntnt">
+                <a style="color: black;" class="modal-trigger" onclick="setTab('spud')">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/spud_nik_logo.png" />
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Spud nik</span>
+                            <p>Clay HANDS <span style="float: right;">2019 - Ongoing - Unreal Engine 4</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="catformer" class="info">
+        <h4>Catformer</h4>
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="img/cat4.png" />
+                </li>
+                <li>
+                    <img src="img/cat1.png" />
+                </li>
+                <li>
+                    <img src="img/cat2.png" />
+                </li>
+                <li>
+                    <img src="img/cat3.png" />
+                </li>
+                <li>
+                    <img src="img/Cats.gif" />
+                </li>
+            </ul>
+        </div>
+        <p>Catformer is an endless 2D platformer. The player is a cat facing the challenge of jumping up platforms and
+            dodging hazards. The aim of the experience is to offer a challenge that is simple to execute (with its one,
+            tap to jump mechanic) and engaging to react to. Along with the draw of offering multiple options for cat
+            customization and aesthetically appealing art and music.</p>
+        <h5>Roles:</h5>
+        <p> • Random placement of platforms</p>
+        <blockquote>There are three types of platforms the player jumps on depending on the stage they’re in and the
+            task was to
+            spawn them in a way that dissuades players from relying on one pattern to guarantee a safe upward path.
+        </blockquote>
+        <p> • Repeatedly scrolling parallax effect with background sprites</p>
+        <blockquote>Worked with the environment artist to reach the desired look of two background layers scrolling at
+            different
+            speeds as the player moves. The backgrounds for each stage are to loop for a set number of times, then
+            transition to the next stage before looping again up until the final endless space stage.</blockquote>
+        <p> • Implemented primary tap to jump mechanic</p>
+        <p>The most significant lessons I learned from this project were the difficulties of getting assets and gameplay
+            to look and act the same way on multiple mobile resolutions. Once the backgrounds were set to scale
+            appropriately to match the screen, further adjustments were needed to keep the length in each stage and
+            transitions between them consistent.</p>
+    </div>
+    <div id="jetsam" class="info none">
+        <h4>4715 Jetsam</h4>
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="img/4715 Jetsam_1.png" />
+                </li>
+                <li>
+                    <img src="img/4715 Jetsam_2.png" />
+                </li>
+                <li>
+                    <img src="img/4715 Jetsam_3.png" />
+                </li>
+                <li>
+                    <img src="img/4715 Jetsam_4.png" />
+                </li>
+                <li>
+                    <img src="img/4715 Jetsam_5.png" />
+                </li>
+                <li>
+                    <img src="img/menu1.png" />
+                </li>
+                <li>
+                    <img src="img/menu2.png" />
+                </li>
+            </ul>
+        </div>
+        <p>4715 Jetsam is a third person platforming shooter. The player acts as a robot pirate that retrieves a lost
+            treasure from a hostile alien planet. The target experience is an engaging pull through a science fiction
+            setting through exploration, storytelling, and combat.</p>
+        <h5>Roles:</h5>
+        <p> • Implementing player movement and combat mechanics</p>
+        <blockquote>The ability to move and look around with common third person control scheme, and fire from third and
+            first-person perspectives.</blockquote>
+        <p> • Implementing enemy A.I. system</p>
+        <blockquote>Created a finite state machine to drive enemy behavior of keeping their distance from the player
+            while firing, and patrolling.</blockquote>
+        <p> • Creating a text-based menu system</p>
+        <blockquote>Made text component objects that traverses a pre-determined menu layout based on player input.
+        </blockquote>
+        <p>A significant takeaway from this project is the importance of having concise documentation describing the
+            goal for fulfilling a task or feature. Along with how much the Unity engine does and does not supply for you
+            when branching from a common set of player mechanics.</p>
+    </div>
+    <div id="spud" class="info none">
+        <h4>Spud nik</h4>
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="img/spud-main.png" />
+                </li>
+                <li>
+                    <img src="img/spud1.png" />
+                </li>
+                <li>
+                    <img src="img/spud2.png" />
+                </li>
+                <li>
+                    <img src="img/spud3.png" />
+                </li>
+                <li>
+                    <img src="img/spud4.png" />
+                </li>
+                <li>
+                    <img src="img/spud5.png" />
+                </li>
+            </ul>
+        </div>
+        <p>Spud nik is a third-person stealth farming game. This is a work in progress in collaboration with the rest of
+            Clay HANDS.</p>
+        <h5>Current Role(s)</h5>
+        <p> • Enemy AI</p>
+        <blockquote>Working on a patrol guard system that patrols a given path, investigates suspicions behavior (visual
+            and aural distractions) and pursues the player on sight.</blockquote>
+    </div>
+    <div class="mobile-tabs">
+        <div class="row" style="margin-bottom: 0;">
+            <div class="col s12" style="padding: 0;">
+                <ul class="tabs">
+                    <li class="tab col s3">
+                        <a id="cat-link" class="active" onclick="setTab('catformer')" href="#cat">Catformer</a>
+                    </li>
+                    <li class="tab col s3">
+                        <a onclick="setTab('jetsam')" id="jet-link" href="#jet">4715 Jetsam</a>
+                    </li>
+                    <li class="tab col s3">
+                        <a onclick="setTab('spud')" id="spud-link" href="#nik">Spud nik</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a href="#" data-target="profile-card"
+        class="sidenav-trigger btn-large btn-floating waves-effect waves-light orange"><i
+            class="large mdi mdi-menu"></i></a>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/velocity.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
