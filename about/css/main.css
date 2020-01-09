@@ -1,88 +1,58 @@
-/*
-on full/active
-portfolio:
-width 500
-column-count 1
+/*Main app styling*/
+#app {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
 
-catformer:
-box-shadow: -8px 0px 10px -8px rgba(0, 0, 0, 1) !important
+#content {
+    padding-left: 300px;
+    display: flex;
+    background-color: #E5E7F4;
+}
 
-*/
+#portfolio {
+    flex-basis: 500px;
+    min-width: 500px;
+    column-count: 1 !important;
+}
 
-.card {
+/*Info Panel Styling*/
+#info {
+    height: 100vh;
+    padding: 0 1%;
+    box-shadow: -8px 0px 6px -9px rgba(0, 0, 0, 1) !important;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+/*Card styling*/
+a .card {
+    color: black;
     cursor: pointer;
 }
 
-header,
-main,
-footer,
-.ml,
-#about,
-#contact {
-    margin-left: 300px;
-}
 
-.info {
-    position: absolute;
-    top: 0;
-    background-color: #E5E7F4;
-    margin-left: 800px;
-    padding-left: 5%;
-    padding-right: 5%;
-    box-shadow: -8px 0px 6px -9px rgba(0, 0, 0, 1) !important;
-    overflow-y: scroll;
-    height: 100vh;
-}
 
-.mobile-tabs {
-    display: none;
-    z-index: 5;
-}
-
-#about,
-#contact,
-.info {
-    padding-right: 5%;
-}
-
-@media only screen and (max-width: 992px) {
-
-    header,
-    main,
-    footer,
-    #about,
-    .info {
-        padding-left: 10px;
-        margin-left: 0;
-        padding-bottom: 60px;
-        padding-top: 50px;
-    }
-
-    .ml {
-        padding-left: 0;
-        display: none;
-        margin-left: 0;
-    }
-
-    .mobile-tabs {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-    }
-}
-
-.sidenav-trigger {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    z-index: 12;
-}
-
+/*Side bar styling*/
 #profile-card {
     box-shadow: -8px 0px 10px -8px rgba(0, 0, 0, 1) inset !important;
-    color: white;
+    color: #ffffff;
+}
+
+#img-tab {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    background-color: teal;
+}
+
+.sidenav li>a,
+.sidenav li>a>i {
+    color: #ffffff;
+    padding-left: 5px;
 }
 
 #id-card {
@@ -114,51 +84,6 @@ footer,
     font-size: 18px !important;
     color: #ffffff !important;
     text-decoration: underline;
-}
-
-/*.link:hover {
-    padding: 0 0 0 45px;
-    font-size: 18px;
-}
-
-.link.active {
-    text-decoration: underline;
-    font-size: 18px;
-    color: #ff6d00;
-    padding: 0 0 0 45px;
-}*/
-
-i.small {
-    color: white;
-}
-
-.none {
-    display: none;
-}
-
-main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: #ffffffde;
-    height: 100vh;
-    align-content: space-around;
-}
-
-main .card {
-    max-width: 25vw;
-    margin-right: 1.25vw;
-    height: fit-content;
-}
-
-#color-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #ffffffde;
-    z-index: -1;
 }
 
 #flip-img {
