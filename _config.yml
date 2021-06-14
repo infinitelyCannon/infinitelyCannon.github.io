@@ -45,6 +45,7 @@ exclude:
   - webpack
   - package.json
   - package-lock.json
+  - node-modules
 
 # Exclude from processing.
 # The following items will not be processed, by default.
