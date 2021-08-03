@@ -150,11 +150,12 @@ window.InitCanvas = function ()
 
 function MorphMeshes(deltaTime)
 {
+	let matrix = new Three.Matrix4();
+	let scale = new Three.Matrix4();
+	let position = new Three.Vector3();
+
 	for (let i = 0; i < Data.count; ++i)
 	{
-		let matrix = new Three.Matrix4();
-		let scale = new Three.Matrix4();
-		let position = new Three.Vector3();
 		let radius = Module.HEAPU32[pointer / Uint32Array.BYTES_PER_ELEMENT + i];
 		let angle;
 
