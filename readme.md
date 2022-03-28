@@ -1,5 +1,5 @@
 # InfinitelyCannon's Corner of the Internet
 
-> ### Portfolio and blog site for Dakarai Simmons
+This page has been migrated to a [new URL](https://dakar.ai) and its source code is in a [new repo.](https://github.com/infinitelyCannon/website-source)
 
-This pages uses the Editorial theme from [HTML5 Up](https://html5up.net/)
+This GitHub page is being maintained to redirect to the new page.
