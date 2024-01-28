@@ -30,7 +30,7 @@ excerpt: Catformer is an infinite scrolling 2D platformer. With it’s one-finge
 			<video controls muted autoplay loop>
 				<source src="/assets/vid/cat/background-scroll.1592x984.mp4" type="video/mp4">
 			</video>
-			<span>A testrun of the background prefab</span>
+			<span>A test run of the background prefab</span>
 		</div>
 	</div>
 	<div class="col-8">
@@ -77,7 +77,7 @@ foreach (var property in particleProps)
 	// Grab each particle module (except subemitters which aren't used)
 	if(property.PropertyType.Name.Contains("Module") &amp;&amp; !property.PropertyType.Name.Contains("SubEmitters"))
 	{
-		// Grab the correspoinding module object on this GameObject, grab its properties,
+		// Grab the corresponding module object on this GameObject, grab its properties,
 		object module = property.GetValue(particles);
 		PropertyInfo[] properties = module.GetType().GetProperties();
 		object newModule = savedSystem.GetType().GetProperty(property.Name).GetValue(savedSystem);
