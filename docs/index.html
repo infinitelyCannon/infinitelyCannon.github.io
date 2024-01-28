@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="refresh" content="0; url='https://www.dakar.ai/?from=github'" />
+	</head>
+	<body>
+		<script>
+			let message = "This page has migrated over to <a href='https://dakar.ai' style='color:#000000'>www.dakar.ai</a>";
+
+			const element = document.createElement( 'div' );
+			element.id = 'webglmessage';
+			element.style.fontFamily = 'monospace';
+			element.style.fontSize = '13px';
+			element.style.fontWeight = 'normal';
+			element.style.textAlign = 'center';
+			element.style.background = '#fff';
+			element.style.color = '#000';
+			element.style.padding = '1.5em';
+			element.style.width = '400px';
+			element.style.margin = '5em auto 0';
+
+			element.innerHTML = message;
+
+			document.appendChild(element);
+		</script>
+	</body>
+</html>
