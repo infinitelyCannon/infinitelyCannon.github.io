@@ -6,7 +6,8 @@
     "start": "bundle exec jekyll serve",
     "watch": "webpack --watch",
     "build": "webpack && bundle exec jekyll build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "webpack && bundle exec jekyll build",
+    "publish": "node ./node/publish.js"
   },
   "author": "Dakarai Simmons",
   "license": "ISC",

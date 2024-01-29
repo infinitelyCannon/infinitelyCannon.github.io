@@ -9,7 +9,7 @@ module.exports =
 		maxEntrypointSize: 512000,
 		maxAssetSize: 512000
 	},
-	entry: path.join(__dirname, "webpack", "index"),
+	entry: path.join(__dirname, "scripts", "index"),
 	/*devtool: 'source-map',*/
 	output: {
 		filename: 'index.js',

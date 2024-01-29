@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="stylesheet" href="/assets/css/photoswipe.css" />
+		<link rel="stylesheet" href="/assets/css/default-skin/default-skin.css" />
+		<link rel="stylesheet" media="screen and (prefers-color-scheme: light)" href="/assets/css/atom-one-light.css" />
+		<link rel="stylesheet" media="screen and (prefers-color-scheme: dark)" href="/assets/css/atom-one-dark.css" />
+		<title>Unannounced Title</title>
+		<link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+		<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Unannounced Title | Dakarai Simmons</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Unannounced Title" />
+<meta name="author" content="Dakarai Simmons" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is part of an upcoming title I’m working on with Soulcade Interactive. The idea is of a third-person stealth fishing game, and I’m contributing as a gameplay and tool programmer." />
+<meta property="og:description" content="This is part of an upcoming title I’m working on with Soulcade Interactive. The idea is of a third-person stealth fishing game, and I’m contributing as a gameplay and tool programmer." />
+<link rel="canonical" href="https://dakar.ai/projects/soulcade.html" />
+<meta property="og:url" content="https://dakar.ai/projects/soulcade.html" />
+<meta property="og:site_name" content="Dakarai Simmons" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Unannounced Title" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Dakarai Simmons"},"description":"This is part of an upcoming title I’m working on with Soulcade Interactive. The idea is of a third-person stealth fishing game, and I’m contributing as a gameplay and tool programmer.","headline":"Unannounced Title","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://dakar.ai/assets/img/infinitelyCannon.600x600.png"},"name":"Dakarai Simmons"},"url":"https://dakar.ai/projects/soulcade.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    </head>
+    <body onload="Setup(event)">
+        <div id="wrapper">
+			<div id="main">
+				<div class="inner">
+					<header>
+	<img src="/assets/img/infinitelyCannon.svg" />
+    <div id="header">
+		<a class="logo" href="/index.html">
+			<strong>Dakarai Simmons</strong> | Portfolio Site
+		</a>
+		<ul class="icons">
+			
+			
+			
+			<li>
+				<a href="https://github.com/infinitelycannon" title="GitHub" target="_blank" class="icon brands">
+					<span class="iconify" data-icon="mdi-github"></span>
+				</a>
+			</li>
+			
+			
+			
+			<li>
+				<a href="https://www.linkedin.com/in/dakarai-simmons-a23787132/" title="Linkedin" target="_blank" class="icon brands">
+					<span class="iconify" data-icon="mdi-linkedin"></span>
+				</a>
+			</li>
+			
+			
+			<li>
+				<a href="mailto:dakar0416@gmail.com" title="Email" target="_blank" class="icon brands">
+					<span class="iconify" data-icon="mdi-email"></span>
+				</a>
+			</li>
+			
+			
+			<li>
+				<a href="/assets/DakaraiSimmons_Resume.pdf" title="Resume" target="_blank" class="icon brands">
+					<span class="iconify" data-icon="mdi-file-pdf"></span>
+				</a>
+			</li>
+			
+		</ul>
+	</div>
+</header>
+					<section>
+    <header class="main">
+        <h1>Unannounced Title</h1>
+    </header>
+    <p>This is part of an upcoming title I'm working on with <a href="https://soulcadeinteractive.com/" target="_blank">Soulcade Interactive.</a> The premise is for a third-person stealth fishing game, and I'm contributing primarily to the game's stealth and fishing mechanics.</p>
+
+<h2>Stealth Mechanics</h2>
+<p>The player has to make their way through enemy AI who watch over a designated area. The guard types include patrollers who investigate distractions the player makes, and turrets which shoot the player for crossing their line of sight.</p>
+<div class="row">
+	<div class="col-7 col-12-medium">
+		<ul>
+			<li>The patrollers are setup to have their patrol points laid out in the level editor.</li>
+			<li>On the player side, I worked on the ability to hide behind cover. The player moves along walls with the help of splines drawn around each hiding spot.</li>
+			<li>To make editing easier, I made it possible to save them as predefined shapes in a way that mirrored Unreal’s BSP tools.</li>
+			<li>The player can distract guards by either knocking while hugging a wall, or throwing a rock.</li>
+		</ul>
+	</div>
+	<div class="col-5 col-12-medium">
+		<div class="video-gallery">
+			<video controls muted loop style="display: block;">
+				<source src="/assets/vid/soulcade/patroller-setup.1920x1080.mp4" type="video/mp4">
+			</video>
+			<video controls muted loop style="display: none;">
+				<source src="/assets/vid/soulcade/stealth-setup.1920x1080.mp4" type="video/mp4">
+			</video>
+			</video>
+			<video controls muted loop style="display: none;">
+				<source src="/assets/vid/soulcade/patroller-example.1920x1080.mp4" type="video/mp4">
+			</video>
+			</video>
+			<video controls muted loop style="display: none;">
+				<source src="/assets/vid/soulcade/sentry-example.1920x1080.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="slideshow-list">
+			<a><img style="background-image: url('/assets/img/soulcade/patroller-setup-thumb.jpg');"></a>
+			<a><img style="background-image: url('/assets/img/soulcade/stealth-setup-thumb.jpg');"></a>
+			<a><img style="background-image: url('/assets/img/soulcade/patroller-example-thumb.jpg');"></a>
+			<a><img style="background-image: url('/assets/img/soulcade/sentry-example-thumb.jpg');"></a>
+		</div>
+	</div>
+</div>
+
+<h2>Fishing Mechanics</h2>
+<p>My contributions for the fishing mechanics came mainly in the form of tools. Setting up a minigame is handled by an actor that lets designers designate all the necessary parameters:</p>
+<div class="row">
+	<div class="col-7 col-12-medium">
+		<ul>
+			<li>The fishing area and the path along the pond to follow, using the same movement tool for stealth sections.</li>
+			<li>The type of fish and debris that can spawn here and their probability of showing up.</li>
+			<li>Where in the pond the objects will spawn and what direction they’ll face.</li>
+			<li>Because the fish all share functionality, they all stem from one class and draw their differences from a data table of attributes (holding vales like mesh, score value, timed hooked, etc.). The fish themselves are then pooled into an array where the spawner can reuse an inactive fish and swap out all its data. Each fish also comes with a designated child actor for artists to add type-specific items like particle effects.</li>
+		</ul>
+	</div>
+	<div class="gallery col-5 col-12-medium" is-grid>
+		
+<a class="image"  use-background="true" data-med="/assets/img/soulcade/fishing-spot.690x552.jpg" data-med-size="690x552">
+	
+	<img class="gallery-image" style="background-image: url('/assets/img/soulcade/fishing-spot.690x552.jpg');" />
+	
+	<span></span>
+</a>
+		
+<a class="image"  use-background="true" data-med="/assets/img/soulcade/fish-movement.1186x596.jpg" data-med-size="1186x596">
+	
+	<img class="gallery-image" style="background-image: url('/assets/img/soulcade/fish-movement.1186x596.jpg');" />
+	
+	<span></span>
+</a>
+		
+<a class="image"  use-background="true" data-med="/assets/img/soulcade/fish-spawn-point.1608x735.jpg" data-med-size="1608x735">
+	
+	<img class="gallery-image" style="background-image: url('/assets/img/soulcade/fish-spawn-point.1608x735.jpg');" />
+	
+	<span></span>
+</a>
+		
+<a class="image"  use-background="true" data-med="/assets/img/soulcade/fish-data.1186x596.jpg" data-med-size="1186x596">
+	
+	<img class="gallery-image" style="background-image: url('/assets/img/soulcade/fish-data.1186x596.jpg');" />
+	
+	<span></span>
+</a>
+	</div>
+</div>
+
+<script>
+	window.OnSetup = window.OnSetup || [];
+
+	function GetThumbName(str)
+	{
+		return str.substring(
+			str.lastIndexOf('/') + 1,
+			str.indexOf("-thumb")
+		);
+	}
+
+	function ResizeVideo()
+	{
+		var videos = $("video");
+			
+		for(var i = 0; i < videos.length; ++i)
+		{
+			var width = $(videos[i]).parent().width();
+			var src = $(videos[i]).children("source").attr("src").split(".")[1].split("x");
+			var aspect = parseInt(src[1]) / parseInt(src[0]);
+			$(videos[i]).width(width);
+			$(videos[i]).height(aspect * width);
+			$(videos[i]).parent().height(aspect * width);
+		}
+	}
+
+	function SetupVideoSlideshow()
+	{
+		$(".slideshow-list img").click(function()
+		{
+			var name = GetThumbName($(this).css("background-image"));
+			var target = $("source[src*='" + name + "']").parent();
+			var videos = target.parent().children("video");
+
+			if(!target[0].paused)
+				return;
+
+			for(var i = 0; i < videos.length; ++i)
+			{
+				if($(videos[i]).css("display") == "block")
+				{
+					videos[i].pause();
+					videos[i].currentTime = 0;
+					$(videos[i]).css("display", "none");
+				}
+			}
+
+			target.css("display", "block");
+			target[0].play();
+		});
+	}
+
+	window.OnSetup.push(function(event)
+	{
+		$(window).on("resize", ResizeVideo);
+		ResizeVideo();
+		SetupVideoSlideshow();
+	});
+</script>
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    window.OnSetup = window.OnSetup || [];
+
+	window.OnSetup.push(function(event)
+    {
+		var galleryElements = $(".gallery");
+
+		for(var i = 0; i < galleryElements.length; ++i)
+		{
+			galleryElements[i].setAttribute("data-pswp-uid", i+1);
+		}
+
+		$(".gallery > a").click(function(e){
+			e.preventDefault();
+
+			var items = [],
+			parent = $(this).parent(),
+			index = parent.children().index(this),
+			links = parent.children("a.image");
+
+			var options = {
+				index: index,
+				shareEl: false,
+				bgOpacity: 0.75,
+				galleryUID: parent.attr("data-pswp-uid")
+			};
+
+			for(var j = 0; j < links.length; ++j)
+			{
+				var size = $(links[j]).attr("data-med-size").split('x');
+				var item = {};
+
+				item.w = parseInt(size[0], 10);
+				item.h = parseInt(size[1], 10);
+                if($(links[j]).attr("has-thumb") == "true")
+                {
+                    item.msrc = $(links[j]).attr("use-background") == "true" ? 
+                    $(links[j]).children("img").css("background-image").split("\"")[1] :
+                    $(links[j]).children("img").attr("src");
+                    item.src = $(links[j]).attr("data-med");
+                }
+                else
+                {
+                    item.src = $(links[j]).attr("data-med");
+                }
+				item.title = $(links[j]).children("span")[0].innerHTML;
+
+				items.push(item);
+			}
+
+			var gallery = new PhotoSwipe($(".pswp")[0], PhotoSwipeUI_Default, items, options);
+			gallery.init();
+		});
+	});
+</script>
+</section>
+				</div>
+			</div>
+		</div>
+		<script src="/assets/js/photoswipe.min.js"></script>
+		<script src="/assets/js/photoswipe-ui-default.min.js"></script>
+		<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/browser.min.js"></script>
+		<script src="/assets/js/breakpoints.min.js"></script>
+		<script src="/assets/js/util.js"></script>
+		<script src="/assets/js/main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+		<script>
+			function Setup(e)
+			{
+				hljs.highlightAll();
+				if(window.OnSetup != undefined && window.OnSetup.length > 0)
+				{
+					for(var i = 0; i < window.OnSetup.length; ++i)
+						window.OnSetup[i](e);
+				}
+			}
+
+			function ClearMigrate()
+			{
+				$("#migrate-msg").removeClass("from-github");
+			}
+		</script>
+    </body>
+</html>
